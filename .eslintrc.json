@@ -22,7 +22,6 @@
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "warn",
     "semi": ["error", "always"],
-    "quotes": ["error", "single"],
-    "use": ["css-loader", "sass-loader"]
+    "quotes": ["error", "single"]
   }
 }
