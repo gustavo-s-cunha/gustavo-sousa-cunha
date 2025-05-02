@@ -7,7 +7,6 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
-  "parser": "babelrc",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
