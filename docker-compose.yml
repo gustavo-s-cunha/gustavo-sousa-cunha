@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gsc_front
+    restart: unless-stopped
+    container_name: gsc_site_front
+    command: npm start
+    ports:
+      - "3000:3000"
+    # volumes:
+    #   - ./src:/usr/share/nginx/html
+    # networks:
+    #   - gustavocunha
+    environment:
+      - TZ=America/Sao_Paulo
+
+# networks:
+#   gustavocunha:
+#     external: true
+#     driver: bridge
