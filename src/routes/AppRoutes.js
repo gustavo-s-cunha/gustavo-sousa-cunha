@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import CertificatesPage from '../pages/CertificatesPage';
 import ProjectsPage from '../pages/ProjectsPage';
-import HabilitsPage from '../pages/HabilitsPage';
+import SkillsPage from '../pages/SkillsPage';
 
 const AppRoutes = () => {
   return (
@@ -11,7 +11,7 @@ const AppRoutes = () => {
       <Route index element={<HomePage />} />
       <Route path="/certificates" element={<CertificatesPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/habilits" element={<HabilitsPage />} />
+      <Route path="/skills" element={<SkillsPage />} />
     </Routes>
   );
 };

@@ -30,8 +30,6 @@ This project is a portfolio website
   ```
     npm start
   ```
-4. http://localhost:3000
-
 
 ## Start with Docker
 
@@ -49,7 +47,9 @@ This project is a portfolio website
   ```
     docker-compose up --build -d
   ```
-4. http://localhost:3000
+
+<br/>
+- http://localhost:3000
 
 
 ## License
