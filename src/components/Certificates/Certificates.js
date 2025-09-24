@@ -7,6 +7,22 @@ import { expandAndFade } from "../../styles/animations";
 const Certificates = () => {
   const certificates = [
     { 
+      title: "UI/UX Designer",
+      codigo: "LN4WORXE",
+      description: "Formação UI/UX Designer",
+      data: "16/09/2025",
+      link: "https://www.dio.me/certificate/LN4WORXE/share",
+      image: "UI_UX.png"
+    },
+    { 
+      title: "Docker",
+      codigo: "XAGYNVZ2",
+      description: "Formação Docker Fundamentals",
+      data: "12/05/2025",
+      link: "https://www.dio.me/certificate/XAGYNVZ2/share",
+      image: "Docker.png"
+    },
+    { 
       title: "DevOps",
       codigo: "SIAILO92",
       description: "Formação DevOps Fundamentals",

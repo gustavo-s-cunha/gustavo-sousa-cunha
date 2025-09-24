@@ -3,8 +3,8 @@ import { Button, Grid } from '@mui/material';
 
 const Footer = () => {
   return (
-    <footer className="footer navbar-expand fixed-bottom shadow-lg overflow-auto">
-      <Grid container spacing={3} >
+    <footer className="footer navbar-expand fixed-bottom shadow-lg overflow-auto" style={{ padding: '0.6rem'}}>
+      <Grid container spacing={2} sx={{ textAlign: 'center' }} >
         <Grid item xs={4} sm={4} >
           <Button
             variant="contained"
@@ -16,6 +16,7 @@ const Footer = () => {
             <img
               src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
               alt="LinkedIn"
+              title="LinkedIn"
             />
           </Button>
         </Grid>
@@ -30,6 +31,7 @@ const Footer = () => {
             <img
               src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC"
               alt="GitHub"
+              title="GitHub"
             />
           </Button>
         </Grid>
@@ -42,8 +44,9 @@ const Footer = () => {
             sx={{ padding: 0, minWidth: "auto", backgroundColor: "#000" }}
           >
             <img
-              src="https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000000?style=for-the-badge&logo=gitbook&logoColor=white"
-              alt="Perfil na DIO"
+              src="https://img.shields.io/badge/DIO-000000?style=for-the-badge&logo=gitbook&logoColor=white"
+              title="Perfil na DIO"
+              alt="DIO"
             />
           </Button>
         </Grid>

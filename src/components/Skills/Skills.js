@@ -46,13 +46,18 @@ const skillsData = [
     type: "Linguagem",
   },
   {
+    image: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+    text: "Python",
+    type: "Linguagem",
+  },
+  {
     image: "https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D",
     text: "Vue.js",
     type: "Linguagem",
   },
   {
-    image: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-    text: "Python",
+    image: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white",
+    text: "PHP",
     type: "Linguagem",
   },
   {
@@ -61,7 +66,8 @@ const skillsData = [
     type: "Frontend",
   },
   {
-    image: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+    image: "https://img.shields.io/badge/CSS3-3670A0?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMTU3MkI2IiBkPSJNMTguODE0IDExNC4xMjNMOC43NiAxLjM1MmgxMTAuNDhsLTEwLjA2NCAxMTIuNzU0LTQ1LjI0MyAxMi41NDMtNDUuMTE5LTEyLjUyNnoiLz48cGF0aCBmaWxsPSIjMzNBOURDIiBkPSJNNjQuMDAxIDExNy4wNjJsMzYuNTU5LTEwLjEzNiA4LjYwMS05Ni4zNTRoLTQ1LjE2djEwNi40OXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjQuMDAxIDUxLjQyOWgxOC4zMDJsMS4yNjQtMTQuMTYzSDY0LjAwMVYyMy40MzVoMzQuNjgybC0uMzMyIDMuNzExLTMuNCAzOC4xMTRoLTMwLjk1VjUxLjQyOXoiLz48cGF0aCBmaWxsPSIjRUJFQkVCIiBkPSJNNjQuMDgzIDg3LjM0OWwtLjA2MS4wMTgtMTUuNDAzLTQuMTU5LS45ODUtMTEuMDMxSDMzLjc1MmwxLjkzNyAyMS43MTcgMjguMzMxIDcuODYzLjA2My0uMDE4di0xNC4zOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNODEuMTI3IDY0LjY3NWwtMS42NjYgMTguNTIyLTE1LjQyNiA0LjE2NHYxNC4zOWwyOC4zNTQtNy44NTguMjA4LTIuMzM3IDIuNDA2LTI2Ljg4MUg4MS4xMjd6Ii8+PHBhdGggZmlsbD0iI0VCRUJFQiIgZD0iTTY0LjA0OCAyMy40MzV2MTMuODMxSDMwLjY0bC0uMjc3LTMuMTA4LS42My03LjAxMi0uMzMxLTMuNzExaDM0LjY0NnptLS4wNDcgMjcuOTk2djEzLjgzMUg0OC43OTJsLS4yNzctMy4xMDgtLjYzMS03LjAxMi0uMzMtMy43MTFoMTYuNDQ3eiIvPjwvc3ZnPg==&logoColor=white",
+    // image: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
     text: "CSS3",
     type: "Frontend",
   },
@@ -139,10 +145,10 @@ const Skills = () => {
                 </Typography>
               </Box>
             </AccordionSummary>
-            <AccordionDetails sx={{ padding: 2, backgroundColor: grey[100]  }}>
-              <Grid container key={`group-${groupIndex}`}>
+            <AccordionDetails sx={{ padding: "16px 16px 2px 16px", backgroundColor: grey[100]  }}>
+              <Grid container key={`group-${groupIndex}`} >
                 {groupByType[type].map((habilit, index) => (
-                  <Grid item xs={6} sm={3} key={`${type}-habilit-${index}`}>
+                  <Grid item xs={4} sm={3} key={`${type}-habilit-${index}`} sx={{ mb: 1, textAlign: 'center' }}>
                     <img src={habilit.image} alt={habilit.text} />
                   </Grid>
                 ))}
