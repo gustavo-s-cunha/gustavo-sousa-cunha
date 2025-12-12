@@ -16,7 +16,7 @@ const Append = ({ title }) => {
         // fontSize: '14px',
         transition: 'height 0.5s ease-in, transform 0.5s ease-in',
         overflow: 'hidden',
-        boxShadow: "0 0.5rem 1.5rem rgba(0, 75, 6, 0.41) !important"
+        boxShadow: "0 0.3rem 1.3rem rgba(0, 75, 6, 0.41) !important"
       }}
     >
       <Typography variant="h6"sx={{ fontWeight: 'bold', color: green[800] }}>

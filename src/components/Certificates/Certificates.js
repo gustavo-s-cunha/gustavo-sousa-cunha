@@ -59,6 +59,14 @@ const certificates_bootcamp = [
 // React
 const certificates_react = [
   { 
+    title: "Formação React Developer",
+    codigo: "TZHVU6EU",
+    description: "Formação React Developer",
+    data: "27/10/2025",
+    link: "https://www.dio.me/certificate/TZHVU6EU/share",
+    image: "react/Formacao_React_Developer.png"
+  },
+  { 
     title: "Componentes encadeados",
     codigo: "HTSNTH3Y",
     description: "Trabalhando com componentes encadeados",
@@ -153,7 +161,14 @@ const Certificates = () => {
           <Grid container spacing={3}>
             {category.array.map((cert, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
-                <Card sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+                <Card sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  transition: 'height 0.2s ease-in, transform 0.2s ease-in',
+                  overflow: 'hidden',
+                  boxShadow: "0 0.2rem 1.2rem rgba(4, 122, 14, 0.45) !important" }}
+                >
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <Box
