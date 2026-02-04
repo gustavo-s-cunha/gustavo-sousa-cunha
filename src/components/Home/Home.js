@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Grid, Typography } from '@mui/material';
-import { green } from '@mui/material/colors';
+import { Box, Button, Grid, Typography } from '@mui/material';
+import { blue, green } from '@mui/material/colors';
 import { expandAndFade } from '../../styles/animations';
 
 const Home = () => {
@@ -19,19 +19,16 @@ const Home = () => {
         </Typography>
 
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Sou um profissional de Tecnologia da Informação com foco em desenvolvimento de software e correção de bugs, atuando com base em metodologias ágeis e BDD.
+          Desenvolvedor full-stack com mais de uma década de experiência em Tecnologia da Informação, atuando em projetos de software de ponta a ponta. Tenho vivência em todas as fases do ciclo de desenvolvimento, do planejamento à entrega em produção, com forte foco em qualidade, organização e resolução de problemas.
         </Typography>
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Em 2015 iniciei minha jornada na área, ainda durante a graduação, e, após concluir o curso, especializei-me por meio de um MBA em Gerenciamento de Projetos de TI e uma pós-graduação em Gestão de Projetos.
-        </Typography>
-        <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Com uma década de experiência como desenvolvedor fullstack, participei de diversas etapas do ciclo de vida de projetos de software, incluindo planejamento, desenvolvimento, testes, correções, documentação e implantação.
+          Iniciei minha carreira em 2015, ainda na graduação, e ao longo do caminho ampliei minha formação com um MBA em Gerenciamento de Projetos de TI e uma pós-graduação em Gestão de Projetos. Trabalho com metodologias ágeis e BDD, buscando sempre entregar soluções eficientes, escaláveis e alinhadas às necessidades do negócio.
         </Typography>
       </Grid>
 
       <Grid item xs={12}>
         <Typography variant="h6" component="h6" sx={{ my: 1, color: green[800] }}>
-          Objetivos e Perfil Profissional
+          Perfil Profissional
         </Typography>
 
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
@@ -44,38 +41,78 @@ const Home = () => {
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
           Estou sempre disposto a enfrentar novos desafios, buscando o aprimoramento contínuo por meio de cursos, novas experiências e trocas profissionais.
         </Typography>
-        <Button
-          size="small"
-          component={Link}
-          to="/certificates"
-          sx={{ my: 1, color: green[800], animation: expandAndFade(green[800], 3) }}
-        >
-          <Typography variant="body1">
-            Certificados
-          </Typography>
-        </Button>
       </Grid>
 
       <Grid item xs={12}>
         <Typography variant="h6" component="h6" sx={{ my: 1, color: green[800] }}>
-          Habilidades Técnicas
+          Contato
         </Typography>
-
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Minha atuação contempla o uso de tecnologias como:
-          <br/>
-          Node.js, React.js, Docker, TypeScript, HTML, CSS e MySQL.
+          <b>E-mail:</b> gustavo.sousa.cunha@gmail.com
         </Typography>
+      </Grid>
+
+      <Grid item xs={12}>
         <Button
           size="small"
           component={Link}
-          to="/skills"
-          sx={{ my: 1, color: green[800], animation: expandAndFade(green[800], 3) }}
-        >
+          to="https://drive.google.com/file/d/11s0ZSvOksCXobtSQopJcSRNddupdwF3x/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ my: 1, color: blue[800], animation: expandAndFade(blue[800], 3) }}
+          >
           <Typography variant="body1">
-            Habilidades
+            Vizualizar Currículo
           </Typography>
         </Button>
+      </Grid>
+      
+      <Box
+        component="hr"
+        sx={{
+          width: '100%',
+          mt: 4,
+          border: 0,
+          borderTop: `1px solid ${green[800]}`
+        }}
+      />
+
+      <Grid item xs={12}>
+        <Box maxWidth={500} mx="auto" justifyContent="left" sx={{ ml: 0 }}>
+          <Grid container justifyContent="left" spacing={2}>
+            <Grid item xs={12} sx={{ mt: -1}}>
+              <Typography variant="h6" component="h6" sx={{ my: 1, color: green[800] }}>
+                Habilidades Técnicas & Certificados
+              </Typography>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Button
+                size="small"
+                component={Link}
+                to="/skills"
+                sx={{ my: 1, color: green[800], animation: expandAndFade(green[800], 3) }}
+                >
+                <Typography variant="body1">
+                  Habilidades
+                </Typography>
+              </Button>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Button
+                size="small"
+                component={Link}
+                to="/certificates"
+                sx={{ my: 1, color: green[800], animation: expandAndFade(green[800], 3) }}
+              >
+                <Typography variant="body1">
+                  Certificados
+                </Typography>
+              </Button>
+            </Grid>
+          </Grid>
+        </Box>
       </Grid>
     </Grid>
   );
