@@ -19,10 +19,12 @@ const Home = () => {
         </Typography>
 
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Desenvolvedor full-stack com mais de uma década de experiência em Tecnologia da Informação, atuando em projetos de software de ponta a ponta. Tenho vivência em todas as fases do ciclo de desenvolvimento, do planejamento à entrega em produção, com forte foco em qualidade, organização e resolução de problemas.
+          Iniciei minha carreira em 2015, ainda durante a graduação, e desde então venho ampliando minha formação com um MBA em Gerenciamento de Projetos de TI e uma pós-graduação em Gestão de Projetos. Essa base me permite unir visão técnica e entendimento de negócio.
         </Typography>
+
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Iniciei minha carreira em 2015, ainda na graduação, e ao longo do caminho ampliei minha formação com um MBA em Gerenciamento de Projetos de TI e uma pós-graduação em Gestão de Projetos. Trabalho com metodologias ágeis e BDD, buscando sempre entregar soluções eficientes, escaláveis e alinhadas às necessidades do negócio.
+          No segmento urbano, trabalhei no desenvolvimento de softwares de prateleira voltados à gestão financeira.<br/>
+          Já no setor agropecuário, participei da construção de aplicações web responsivas com arquitetura modular, permitindo a expansão do sistema por meio da criação e adaptação de módulos para diferentes segmentos do setor.
         </Typography>
       </Grid>
 
@@ -32,14 +34,15 @@ const Home = () => {
         </Typography>
 
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Valorizo um ambiente de trabalho harmonioso e colaborativo a-fim de fortaler as relações interpessoais, acredito que uma boa comunicação é essencial para o sucesso de qualquer equipe, sendo o principal motor para o crescimento coletivo.
-        </Typography>
-        <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Meu compromisso é construir uma trajetória sólida, deixando uma contribuição positiva e duradoura por onde passo.
+          Valorizo ambientes colaborativos e organizados, onde a comunicação clara é parte essencial do desenvolvimento. Acredito que bons resultados surgem quando técnica e relacionamento caminham juntos.
         </Typography>
 
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
-          Estou sempre disposto a enfrentar novos desafios, buscando o aprimoramento contínuo por meio de cursos, novas experiências e trocas profissionais.
+          Busco construir soluções consistentes e sustentáveis, deixando uma contribuição positiva em cada projeto que participo.
+        </Typography>
+
+        <Typography variant="body1" gutterBottom sx={{ textAlign: 'justify' }}>
+          Estou sempre aberto a novos desafios e ao aprendizado contínuo, seja por meio de estudos, novas experiências ou troca de conhecimento com outros profissionais.
         </Typography>
       </Grid>
 

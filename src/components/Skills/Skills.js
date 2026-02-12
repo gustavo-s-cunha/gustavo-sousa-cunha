@@ -7,6 +7,7 @@ import { IconUserExperience } from '../../styles/images/userExperience';
 import { IconDatabase } from '../../styles/images/database';
 import { IconLanguages } from '../../styles/images/languages';
 import { IconConection } from '../../styles/images/conection';
+import { IconArquitEng } from '../../styles/images/arquitEng';
 
 // https://www.flaticon.com/br/icones-gratis/programador
 // https://www.svgcreator.com/convert
@@ -16,6 +17,7 @@ const icon = {
   "Frontend": <IconUserExperience color={green[800]} />,
   "Banco de Dados": <IconDatabase color={green[800]} />,
   "Plataforma": <IconConection color={green[800]} />,
+  "Arquitetura & Engenharia": <IconArquitEng color={green[800]} />,
 }
 
 // Dados com separação por tipo
@@ -111,6 +113,31 @@ const skillsData = [
     text: "GitHub",
     type: "Plataforma",
   },
+  {
+    image: "https://img.shields.io/badge/API-RESTful-005571?style=for-the-badge",
+    text: "API RESTful",
+    type: "Arquitetura & Engenharia",
+  },
+  {
+    image: "https://img.shields.io/badge/Microservices-6DB33F?style=for-the-badge",
+    text: "Microsserviços",
+    type: "Arquitetura & Engenharia",
+  },
+  {
+    image: "https://img.shields.io/badge/Clean-Architecture-000000?style=for-the-badge",
+    text: "Clean Architecture",
+    type: "Arquitetura & Engenharia",
+  },
+  {
+    image: "https://img.shields.io/badge/Metodologias-Ágeis-FF6F00?style=for-the-badge",
+    text: "Metodologias Ágeis",
+    type: "Arquitetura & Engenharia",
+  },
+  {
+    image: "https://img.shields.io/badge/IA-Introdução-4B8BBE?style=for-the-badge",
+    text: "Introdução à IA",
+    type: "Arquitetura & Engenharia",
+  },
 ];
 
 // Agrupa os dados por tipo
@@ -124,7 +151,7 @@ const Skills = () => {
   return (
     <Grid container spacing={2} sx={{ mb: 2 }}>
       <Grid item xs={12} sm={12}>
-        {Object.keys(groupByType).map((type, groupIndex) => (<>
+        {Object.keys(groupByType).map((type, groupIndex) => (<React.Fragment key={`fragment-${groupIndex}`}>
           <Accordion
             defaultExpanded={true}
             key={`ac-group-${groupIndex}`}
@@ -148,7 +175,15 @@ const Skills = () => {
             <AccordionDetails sx={{ padding: "16px 16px 2px 16px", backgroundColor: grey[100]  }}>
               <Grid container key={`group-${groupIndex}`} >
                 {groupByType[type].map((habilit, index) => (
-                  <Grid item xs={4} sm={3} key={`${type}-habilit-${index}`} sx={{ mb: 1, textAlign: 'center' }}>
+                  <Grid item xs={6} sm={4} md={3} lg={2} key={`${type}-habilit-${index}`}
+                    sx={{
+                      mb: 1,
+                      textAlign: 'center',
+                      transition: 'transform 0.3s ease',
+                      '&:hover': {
+                        transform: 'scale(1.2)',
+                      },
+                    }}>
                     <img src={habilit.image} alt={habilit.text} />
                   </Grid>
                 ))}
@@ -159,7 +194,7 @@ const Skills = () => {
           {Object.keys(groupByType).length - 1 !== groupIndex && (
             <Divider sx={{ mt: 2, mb: 2, borderColor: blue[800] }} />
           )}
-        </>))}
+        </React.Fragment>))}
       </Grid>
     </Grid>
   );
